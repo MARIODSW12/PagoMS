@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "Pagos.API.Controllers.PagoController",
+    "Method": "AgregarPago",
+    "RelativePath": "api/pagos/AgregarPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pago",
+        "Type": "Pagos.Application.DTOs.AgregarPagoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pagos.API.Controllers.PagoController",
+    "Method": "getPagoPorId",
+    "RelativePath": "api/pagos/GetPagoPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPago",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pagos.API.Controllers.PagoController",
+    "Method": "GetPagoPorIdSubasta",
+    "RelativePath": "api/pagos/GetPagoPorIdSubasta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSubasta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pagos.API.Controllers.PagoController",
+    "Method": "GetPagosSubastador",
+    "RelativePath": "api/pagos/GetPagosSubastador/{idSubastador}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSubastador",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "from",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pagos.API.Controllers.PagoController",
+    "Method": "GetPagosUsuario",
+    "RelativePath": "api/pagos/GetPagosUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
