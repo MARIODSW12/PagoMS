@@ -25,7 +25,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Registrar configuración de MongoDB
+// Registrar configuraciÃ³n de MongoDB
 builder.Services.AddSingleton<MongoWritePagoDbConfig>();
 builder.Services.AddSingleton<MongoReadPagoDbConfig>();
 builder.Services.AddSingleton<IRestClient>(new RestClient());
@@ -67,7 +67,7 @@ builder.Services.AddMassTransit(busConfigurator =>
 EndpointConvention.Map<AgregarPagoEvent>(new Uri("queue:" + Environment.GetEnvironmentVariable("RABBIT_QUEUE_AgregarPago")));
 
 
-// Configuración CORS permisiva
+// ConfiguraciÃ³n CORS permisiva
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -84,11 +84,10 @@ var app = builder.Build();
 app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 //app.UseHttpsRedirection();
 
